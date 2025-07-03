@@ -33,6 +33,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--secondary-color);
 }
 .logo_title{
     font-size: 24px;
