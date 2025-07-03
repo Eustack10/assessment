@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Padauk:wght@400;700&display=swap');
+:root{
+    --secondary-color: #1F392C;
+    --primary-color:#FF60E6;
+    --bg-color:#F8F5F0;
+}
+*, html, body, p, h1,h2,h3,h4,h5,h6{
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../fonts/sf/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:48px 160px 16px 160px;
+    /* border:1px solid red; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo_title{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+nav .content{
+    display: flex;
+    gap: 32px;
+}
+nav .content a{
+    font-family: "SF Pro Text";
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav .join{
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    width: 214px;
+    padding: 12px 32px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1%;
+    line-height: 24px;
+}
+
+#banner{
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 140px 160px;
+    position: relative;
+}
+#banner .left{
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#banner .left .hand1{
+    position: absolute;
+    left: 0;
+}
+#banner .left .bulb1
+{
+    position: absolute;
+    top: 240px;
+    right: 0;
+    margin-right: 20px;
+}
+
+#banner .left .insta
+{
+    position: absolute;
+    left: 35px;
+    top: 330px;
+}
+#banner .left .fb1
+{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    left: 130px;
+}
+
+
+#banner .right{
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#banner .right .line2{
+    position: relative;
+    top:210px;
+}
+
+#banner .right .fb2{
+    position: absolute;
+    right: 10px;
+    top: 150px;
+}
+#banner .right .bulb2{
+    position: absolute;
+    left: -20px;
+    top:230px;
+}
+
+
+#banner .right .hand2{
+    position: absolute;
+    right: 0;
+    bottom:-320px;
+}
+
+#banner .right .yt{
+    position: absolute;
+    left: 40px;
+    bottom:-170px;
+}
+#banner .content{
+    width: 977px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+#banner .content .title h1{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 112px;
+    line-height: 112px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 2;
+}
+#banner .content .title .highlight{
+    width: 626px;
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    z-index: 1;
+}
+#banner .content .body{
+    position: relative;
+    width: 773px;
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+    color: var(--secondary-color);
+}
+#banner .content .subscribe{
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#banner .content .subscribe input{
+    border: none;
+    outline: none;
+    width: 567px;
+    height: 64px;
+    padding:0 8px 0 24px;
+    border-radius: 100px;
+    font-family: SF Pro Text;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: bottom;
+    color: var(--secondary-color);
+}
+#banner .content .subscribe input::-webkit-input-placeholder {
+  color: #d4d4d4;
+}
+
+#banner .content .subscribe input:-moz-placeholder {
+  color: #d4d4d4;
+  opacity: 1;
+}
+
+#banner .content .subscribe input::-moz-placeholder {
+  color: #d4d4d4;
+  opacity: 1;
+}
+
+#banner .content .subscribe input:-ms-input-placeholder {
+  color: #d4d4d4;
+}
+#banner .content .subscribe button{
+    position: absolute;
+    right: 8px;
+    width: 102px;
+    height: 48px;
+    /* padding-top: 12px; */
+    padding-right: 32px;
+    /* padding-bottom: 12px; */
+    padding-left: 32px;
+    gap: 10px;
+    border-radius: 24px;
+    font-family: "SF Pro Text";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    color:var(--secondary-color);
+    background-color: var(--primary-color);
+}
