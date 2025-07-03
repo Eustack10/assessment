@@ -8,6 +8,7 @@
     font-family: "Kulim Park", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 html,body{
     margin: 0;
@@ -49,6 +50,10 @@ nav .content a{
     font-weight: 500;
     text-decoration: none;
     color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+nav .content a:hover{
+    color: var(--primary-color);
 }
 nav .join{
     border-radius: 100px;
@@ -62,15 +67,21 @@ nav .join{
     font-weight: 600;
     letter-spacing: 1%;
     line-height: 24px;
+    transition: all 0.3s ease;
+}
+nav .join:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 #banner{
-    min-height: fit-content;
+    /* min-height: fit-content; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 140px 160px;
     position: relative;
+    height: 525px;
 }
 #banner .left{
     width: fit-content;
@@ -179,13 +190,13 @@ nav .join{
     margin: 0;
     color: var(--secondary-color);
 }
-#banner .content .subscribe{
+.subscribe{
     /* border: 1px solid red; */
     position: relative;
     display: flex;
     align-items: center;
 }
-#banner .content .subscribe input{
+.subscribe input{
     border: none;
     outline: none;
     width: 567px;
@@ -200,24 +211,24 @@ nav .join{
     vertical-align: bottom;
     color: var(--secondary-color);
 }
-#banner .content .subscribe input::-webkit-input-placeholder {
+.subscribe input::-webkit-input-placeholder {
   color: #d4d4d4;
 }
 
-#banner .content .subscribe input:-moz-placeholder {
+.subscribe input:-moz-placeholder {
   color: #d4d4d4;
   opacity: 1;
 }
 
-#banner .content .subscribe input::-moz-placeholder {
+.subscribe input::-moz-placeholder {
   color: #d4d4d4;
   opacity: 1;
 }
 
-#banner .content .subscribe input:-ms-input-placeholder {
+.subscribe input:-ms-input-placeholder {
   color: #d4d4d4;
 }
-#banner .content .subscribe button{
+.subscribe button{
     position: absolute;
     right: 8px;
     width: 102px;
@@ -239,4 +250,573 @@ nav .join{
     outline: none;
     color:var(--secondary-color);
     background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.subscribe button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 64px 72px;
+    position:relative;
+    gap:75px;
+    z-index: 2;
+    margin-top: 300px;
+}
+#partner .mark{
+    width: 350px;
+    position: absolute;
+    left: 685px;
+    top:160px;
+}
+#partner .line{
+    position: absolute;
+    left: 0;
+}
+#partner .title h1{
+    position: relative;
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 922px;
+    margin: 0;
+    color: var(--secondary-color);
+    z-index: 1;
+}
+#partner .content{
+    display: flex;
+    background-color: #fff;
+    padding: 50px 80px;
+    position: relative;
+    z-index: 1;
+    width: 75%;
+    border-radius: 24px;
+}
+#partner .content .left{
+    min-width: 50%;
+    /* border:1px solid red; */
+}
+#partner .content .right{
+    width: 50%;
+    overflow: none;
+}
+#partner .content .right .scroll{
+    width: 150%;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+    text-wrap: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+#partner .content .right .scroll::-webkit-scrollbar {
+  display: none;
+}
+#partner .content .left h2{
+    font-family: "SF Pro Text";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+#partner .content .left p{
+font-family: "SF Pro Text";
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0%;
+color: var(--secondary-color);
+
+}
+
+#partner .content .right .card{
+    min-width: 404px;
+    width: 404px;
+    gap: 12px;
+    border-radius: 16px;
+    padding: 24px;
+}
+#partner .content .right .card.style1{
+    background-color: #FF60E6;
+}
+
+#partner .content .right .card.style2{
+    background-color: #FFADF2;
+}
+#partner .content .right .card .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#partner .content .right .card .head .info{
+    margin: 0;
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -1%;
+    color: var(--secondary-color);
+}
+#partner .content .right .card .body{
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    text-wrap: wrap;
+}
+
+#make_it_big{
+    position: relative;
+    padding: 34px 72px;
+    position:relative;
+    gap:34px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#make_it_big .title h1{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+#we_do_it{
+    position: relative;
+    padding: 50px 72px;
+    position:relative;
+    gap:34px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#we_do_it .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    margin-top: 50px;
+}
+#we_do_it .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#we_do_it .left .line{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#we_do_it .left .hand{
+    position: absolute;
+    left: 0;
+    top: -150px;
+}
+
+#we_do_it .left .like{
+    position: absolute;
+    left: 210px;
+    top: 300px;
+}
+
+#we_do_it .right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#we_do_it .right .line2{
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+#we_do_it .right .hand2{
+    position: absolute;
+    right: 0;
+    top:350px;
+}
+
+#we_do_it .right .like2{
+    position: absolute;
+    right: 220px;
+    top: 220px;
+}
+#we_do_it .title h1{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color:var(--secondary-color);
+    margin: 0;
+}
+#we_do_it .body p{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color:var(--secondary-color);
+    margin: 0;
+}
+#we_do_it .sub-body p{
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    color:var(--secondary-color);
+    margin: 0;
+}
+
+#step{
+    margin-top: 80px;
+    padding: 0 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+#step .content{
+    display: flex;
+    width: 973px;
+}
+#step .content .card{
+    width: 423px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#step .content .card .title{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    text-wrap: nowrap;
+    color: var(--secondary-color);
+}
+#step .content .card .body{
+    font-family:"SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+#review{
+    padding: 64px 160px;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+#review .slider{
+    position:relative;
+}
+#review .info{
+    font-family: SF Pro Text;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--secondary-color);
+}
+#review .title{
+    max-width: 938px;
+    position: relative;
+    color: var(--secondary-color);
+}
+#review .title p{
+
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+#review .title img{
+    vertical-align: middle;
+}
+#review .title .mark{
+    position: absolute;
+    left: 230px;
+    top: 70px;
+    width: 514px;
+}
+
+#review .title .mark1{
+    position: absolute;
+    left: 160px;
+    top: 60px;
+    width: 170px;
+}
+
+#review .slider .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#review .slider .head h2{
+    width: 614px;
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+}
+#review .slider .head .navigator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+
+#review .slider .head .navigator button{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    width: 40px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 40px;
+    padding: 8px;
+    border-width: 1px;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+#review .slider .head .navigator button:hover{
+    background-color: var(--primary-color);
+}
+#review .slider .body{
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+#review .slider .body .scroll{
+    scroll-behavior: smooth;
+    position: relative;
+    /* width: fit-content; */
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+    text-wrap: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+#review .slider .body::-webkit-scrollbar {
+  display: none;
+}
+#review .slider .body .scroll::-webkit-scrollbar {
+  display: none;
+}
+#review .slider .body .card{
+    /* border:1px solid red; */
+    max-width: 508px;
+    min-width: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:15px;
+    padding: 24px 56px;
+    border-radius: 16px;
+    text-wrap: wrap;
+
+}
+#review .slider .body .card.style1{
+    background-color: #FFADF2;
+}
+#review .slider .body .card.style2{
+    background-color: var(--primary-color);
+}
+#review .slider .body .card p,
+#review .slider .body .card h4{
+    margin: 0;
+}
+
+#review .slider .body .card h4{
+    margin: 0;
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1%;
+    color: var(--secondary-color);
+}
+#review .slider .body .card p{
+    font-family: SF Pro Text;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+}
+
+
+#charity{
+    padding: 64px 160px;
+    display: flex;
+    flex-direction: row;
+    gap:32px;
+}
+#charity .card1{
+    width: 50%;
+    /* height: 515px; */
+    background-color: var(--primary-color);
+    padding: 50px 0;
+    border-radius: 16px;
+}
+#charity .card1 img{
+    width: 100%;
+}
+#charity .card1 p{
+    margin: 0;
+    margin-top: 50px;
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding:0 100px;
+    color: var(--secondary-color);
+}
+#charity .card2{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 56px;
+}
+
+#charity .card2 h1{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+#charity .card2 p{
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+#contact{
+    padding: 64px 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+}
+#contact h1{
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--secondary-color);
+    margin:0;
+}
+
+#contact p{
+    margin:0;
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--secondary-color);
+}
+#contact .body{
+    margin-top:40px;
+    width: 567px;
+}
+
+footer{
+    padding: 0 160px 64px 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .nav{
+    display: flex;
+    gap: 32px;
+}
+footer .nav a{
+    font-family: "SF Pro Text";
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+footer .nav a:hover{
+    color: var(--primary-color);
+}
+
+footer .copy{
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: var(--secondary-color);
+}
+footer .social{
+    display: flex;
+    align-items: center;
+    gap:20px;
 }
