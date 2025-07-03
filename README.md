@@ -16,6 +16,7 @@ This is a solution to the Senior Frontend Developer technical assessment provide
 
 
 ## 📁 Project Structure
+<pre>
 /project-root
 │
 ├── index.html # Main HTML file
@@ -24,7 +25,7 @@ This is a solution to the Senior Frontend Developer technical assessment provide
 ├───── /fonts (Related fonts)
 ├───── /images (Template assets)
 ├───── /js (for scroll behavior)
-
+</pre>
 ## ✍️ Notes
 - I followed the Figma design closely.
 - Used `scroll-behavior: smooth` and `scrollLeftRight` in JS for the horizontal scroll slider.
