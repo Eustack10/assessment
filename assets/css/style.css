@@ -625,6 +625,7 @@ color: var(--secondary-color);
     border-width: 1px;
     color: var(--secondary-color);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 #review .slider .head .navigator button:hover{
