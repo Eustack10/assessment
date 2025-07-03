@@ -19,7 +19,7 @@ This is a solution to the Senior Frontend Developer technical assessment provide
 /project-root
 │
 ├── index.html # Main HTML file
-├── /assets # Css, JS , Images and fonts
+├── /assets # Css, JS , Images and fonts \n
 ├───── /css (Web page's style)
 ├───── /fonts (Related fonts)
 ├───── /images (Template assets)
@@ -32,3 +32,9 @@ This is a solution to the Senior Frontend Developer technical assessment provide
 
 ## 📌 How to Run Locally
 1. Clone the repository:
+git clone https://github.com/eustack10/assessment.git
+cd your-repo-name
+2. Open `index.html` directly in your browser.
+
+## 🙏 Acknowledgment
+Thank you for the opportunity to complete this assessment. I'm happy to walk through my code and design decisions in an interview.
